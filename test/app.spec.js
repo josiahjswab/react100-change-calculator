@@ -47,7 +47,7 @@ describe('express', function() {
   it('should include a button for the user to calculate change', () =>
     nightmare
     .goto(url)
-    .evaluate(() => document.querySelector('button.btn'))
+    .evaluate(() => document.querySelector('button'))
     .end()
     .then(button => {
       expect(button).to.not.be.null.and.to.not.be.undefined;
